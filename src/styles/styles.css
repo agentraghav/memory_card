@@ -1,16 +1,25 @@
 .nav-back {
-  height: 150px;
+  height: 300px;
   background-color: black;
 }
 
 .head-img {
-  margin-left: 40%;
-  height: 100px;
-  width: 300px;
+  margin-left: 37%;
+  height: 120px;
+  width: 350px;
 }
 
 .head-nav {
-  margin-left: 40%;
+  text-align: center;
   color: #e4af3a;
   font-family: 'Lato', sans-serif;
+}
+
+.score {
+  margin-right: 100px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #e4af3a;
+  text-align: right;
 }
