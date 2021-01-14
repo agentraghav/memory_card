@@ -42,7 +42,7 @@
   font-weight: 400;
   font-size: 20px;
   color: #e4af3a;
-  margin-top: 10px;
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -52,4 +52,9 @@
 
 .para-cont {
   background-color: white;
+}
+
+.but {
+  background: transparent;
+  border: none;
 }

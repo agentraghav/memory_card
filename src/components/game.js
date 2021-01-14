@@ -36,15 +36,13 @@ export const Game = (props) => {
       <Row className='back'>
         {arrCard.map((card) => {
           return (
-            <Col
-              className='card-click'
-              onClick={logic}
-              key={card.id}
-              id={card.id}>
-              <Image className='img-char' src={card.imgsrc} />
-              <Col className='para-cont'>
-                <p className='char-title'>{card.name}</p>
-              </Col>
+            <Col className='card-click' key={card.id} id={card.id}>
+              <button className='but' onClick={logic}>
+                <Image className='img-char' src={card.imgsrc} />
+                <Col className='para-cont'>
+                  <p className='char-title'>{card.name}</p>
+                </Col>
+              </button>
             </Col>
           );
         })}
