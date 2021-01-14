@@ -11,7 +11,7 @@
 
 .head-nav {
   text-align: center;
-  color: #e4af3a;
+  color: #fdbd01;
   font-family: 'Lato', sans-serif;
 }
 
@@ -20,7 +20,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 22px;
-  color: #e4af3a;
+  color: #fdbd01;
   text-align: right;
 }
 
@@ -38,10 +38,11 @@
 }
 
 .char-title {
+  margin-bottom: 20px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: #e4af3a;
+  color: #fdbd01;
   border-radius: 10px;
   text-align: center;
 }
@@ -51,6 +52,8 @@
 }
 
 .para-cont {
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
   background-color: white;
 }
 

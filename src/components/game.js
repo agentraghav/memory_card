@@ -36,7 +36,7 @@ export const Game = (props) => {
       <Row className='back'>
         {arrCard.map((card) => {
           return (
-            <Col className='card-click' key={card.id} id={card.id}>
+            <Col md={3} className='card-click' key={card.id} id={card.id}>
               <button className='but' onClick={logic}>
                 <Image className='img-char' src={card.imgsrc} />
                 <Col className='para-cont'>
