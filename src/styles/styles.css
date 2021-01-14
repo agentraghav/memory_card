@@ -1,3 +1,8 @@
+.body {
+  padding: 0;
+  margin: 0;
+  background: url('https://wallpapercave.com/wp/wp2448639.jpg');
+}
 .nav-back {
   height: 250px;
   background-color: black;
@@ -26,10 +31,6 @@
 
 .back {
   height: 750px;
-  background-image: url('https://wallpapercave.com/wp/wp2448639.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .img-char {

@@ -5,7 +5,7 @@ import '../styles/styles.css';
 export const Game = (props) => {
   const [clickedCards, setClickedCards] = useState([]);
   let arrCard = data;
-
+  console.log(arrCard);
   const shuffle = () => {
     for (let i = arrCard.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -14,12 +14,16 @@ export const Game = (props) => {
   };
 
   const logic = (e) => {
-    if (!clickedCards.includes(e.target.id)) {
-      setClickedCards((clickedCards) => [...clickedCards, e.target.id]);
-      props.increseScore();
+    if (!clickedCards.includes(Number(e.target.closest('.card-click').id))) {
+      setClickedCards((clickedCards) => [
+        ...clickedCards,
+        Number(e.target.closest('.card-click').id),
+      ]);
+      props.increaseScore();
     } else {
-      props.bestScore();
+      props.bestScore(props.score);
       props.resetScore();
+      setClickedCards([]);
     }
   };
 
@@ -30,12 +34,19 @@ export const Game = (props) => {
   return (
     <>
       <Row className='back'>
-        <Col md={12}>
+        <Col className='cont' md={12}>
           {arrCard.map((card) => {
-            <Col md={3} onClick={logic} key={card.id}>
-              <Image className='img-char' src={card.imgsrc} />
-              <p className='char-title'>{card.name}</p>
-            </Col>;
+            return (
+              <Col
+                className='card-click'
+                lg={3}
+                onClick={(e) => logic(e)}
+                key={card.id}
+                id={card.id}>
+                <Image className='img-char' src={card.imgsrc} />
+                <p className='char-title'>{card.name}</p>
+              </Col>
+            );
           })}
         </Col>
       </Row>
