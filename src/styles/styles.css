@@ -23,3 +23,10 @@
   color: #e4af3a;
   text-align: right;
 }
+
+.back {
+  background-image: url('https://i.pinimg.com/originals/b2/2d/4a/b22d4ab71b3a4de452359a5a1ebd45ca.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
