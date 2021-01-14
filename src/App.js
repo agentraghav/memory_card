@@ -26,6 +26,8 @@ function App() {
         increaseScore={increaseScore}
         bestScore={bestScore}
         resetScore={resetScore}
+        score={score}
+        highScore={highScore}
       />
     </>
   );
