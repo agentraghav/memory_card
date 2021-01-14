@@ -9,12 +9,12 @@ export const Header = () => {
     <>
       <Navbar className='nav-back'>
         <Container>
-          <Navbar.Brand href='#home'>Navbar</Navbar.Brand>
-          <Nav className='mr-auto'>
-            <Nav.Link href='#home'>Home</Nav.Link>
-            <Nav.Link href='#features'>Features</Nav.Link>
-            <Nav.Link href='#pricing'>Pricing</Nav.Link>
-          </Nav>
+          <Image
+            className='head-img'
+            src='https://media.harrypotterfanzone.com/harry-potter-logo-tutorial-final.jpg'></Image>
+          <div className='head-nav'>
+            <h1>Memory Card</h1>
+          </div>
         </Container>
       </Navbar>
     </>
