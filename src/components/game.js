@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import data from '../data/data';
 import '../styles/styles.css';
 export const Game = (props) => {
@@ -32,24 +32,23 @@ export const Game = (props) => {
   }, [props.score, props.highScore]);
 
   return (
-    <>
+    <Container fluid>
       <Row className='back'>
-        <Col className='cont' md={12}>
-          {arrCard.map((card) => {
-            return (
-              <Col
-                className='card-click'
-                lg={3}
-                onClick={(e) => logic(e)}
-                key={card.id}
-                id={card.id}>
-                <Image className='img-char' src={card.imgsrc} />
+        {arrCard.map((card) => {
+          return (
+            <Col
+              className='card-click'
+              onClick={logic}
+              key={card.id}
+              id={card.id}>
+              <Image className='img-char' src={card.imgsrc} />
+              <Col className='para-cont'>
                 <p className='char-title'>{card.name}</p>
               </Col>
-            );
-          })}
-        </Col>
+            </Col>
+          );
+        })}
       </Row>
-    </>
+    </Container>
   );
 };
