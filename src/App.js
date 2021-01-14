@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header score={score} highScore={highScore} />
       <Game
         increaseScore={increaseScore}
         bestScore={bestScore}

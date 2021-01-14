@@ -25,8 +25,24 @@
 }
 
 .back {
+  height: 750px;
   background-image: url('https://wallpapercave.com/wp/wp2448639.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.img-char {
+  margin-top: 20px;
+  height: 300px;
+  width: 350px;
+}
+
+.char-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #e4af3a;
+  margin-top: 10px;
+  text-align: center;
 }
