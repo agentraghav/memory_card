@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/styles.css';
-import { Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 export const Header = (props) => {
   const { score, highScore } = props;
   return (
-    <>
+    <Container fluid>
       <Row className='nav-back'>
         <Col md={12}>
           <Image
@@ -22,6 +22,6 @@ export const Header = (props) => {
           </p>
         </Col>
       </Row>
-    </>
+    </Container>
   );
 };
